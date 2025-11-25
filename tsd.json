@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "target": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "moduleResolution": "node",
+    "paths": {
+      "mongoose": ["../src/index.d.ts"]
+    }
+  }
+}
