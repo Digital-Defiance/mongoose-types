@@ -1,0 +1,28 @@
+{
+  "name": "digitaldefiance-mongoose-types",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/digitaldefiance-mongoose-types/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "echo 'Types-only package - no build needed'"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "yarn test",
+        "cwd": "packages/digitaldefiance-mongoose-types"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "echo 'No linting configured for types-only package'"
+      }
+    }
+  },
+  "tags": ["type:types", "scope:mongoose"]
+}
