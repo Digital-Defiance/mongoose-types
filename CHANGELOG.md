@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [8.20.3] - 2024-11-25
+
+### Fixed
+- Added index.js to re-export all mongoose runtime exports, fixing "Cannot read properties of undefined (reading 'ObjectId')" error in Jest tests
+- Package now properly provides both type declarations and runtime exports
+
 ## [8.20.2] - 2024-11-25
 
 ### Fixed
