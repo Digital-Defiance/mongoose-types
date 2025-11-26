@@ -1,6 +1,6 @@
 {
   "name": "@digitaldefiance/mongoose-types",
-  "version": "8.20.4",
+  "version": "8.20.5",
   "description": "Mongoose TypeScript definitions with support for custom ID types (string | ObjectId | any)",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -18,9 +18,11 @@
     "test:runtime": "node test-runtime.js",
     "prepublishOnly": "yarn test"
   },
+  "dependencies": {
+    "mongoose": "^8.20.0"
+  },
   "devDependencies": {
     "@types/node": "^24.10.1",
-    "mongoose": "^8.20.0",
     "tsd": "^0.33.0",
     "typescript": "^5.9.3"
   },
