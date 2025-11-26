@@ -1,4 +1,3 @@
-
 declare module 'mongoose' {
   import mongodb = require('mongodb');
   import bson = require('bson');
@@ -52,15 +51,24 @@ declare module 'mongoose' {
 
     class Buffer extends NativeBuffer {
       /** Sets the subtype option and marks the buffer modified. */
-      subtype(subtype: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 128 | ToObjectOptions): void;
+      subtype(
+        subtype: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 128 | ToObjectOptions
+      ): void;
 
       /** Converts this buffer to its Binary type representation. */
       toObject(subtype?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 128): mongodb.Binary;
     }
 
-    class Decimal128 extends mongodb.Decimal128 { }
+    class Decimal128 extends mongodb.Decimal128 {}
 
-    class DocumentArray<T, THydratedDocumentType extends Types.Subdocument<any, any, T> = Types.Subdocument<InferId<T>, any, T> & T> extends Types.Array<THydratedDocumentType> {
+    class DocumentArray<
+      T,
+      THydratedDocumentType extends Types.Subdocument<
+        any,
+        any,
+        T
+      > = Types.Subdocument<InferId<T>, any, T> & T
+    > extends Types.Array<THydratedDocumentType> {
       /** DocumentArray constructor */
       constructor(values: AnyObject[]);
 
@@ -74,7 +82,11 @@ declare module 'mongoose' {
 
       push(...args: (AnyKeys<T> & AnyObject)[]): number;
 
-      splice(start: number, deleteCount?: number, ...args: (AnyKeys<T> & AnyObject)[]): THydratedDocumentType[];
+      splice(
+        start: number,
+        deleteCount?: number,
+        ...args: (AnyKeys<T> & AnyObject)[]
+      ): THydratedDocumentType[];
     }
 
     class Map<V> extends global.Map<string, V> {
@@ -82,10 +94,13 @@ declare module 'mongoose' {
       toObject(options?: ToObjectOptions & { flattenMaps?: boolean }): any;
     }
 
-    class ObjectId extends mongodb.ObjectId {
-    }
+    class ObjectId extends mongodb.ObjectId {}
 
-    class Subdocument<IdType = any, TQueryHelpers = any, DocType = any> extends Document<IdType, TQueryHelpers, DocType> {
+    class Subdocument<
+      IdType = any,
+      TQueryHelpers = any,
+      DocType = any
+    > extends Document<IdType, TQueryHelpers, DocType> {
       $isSingleNested: true;
 
       /** Returns the top level document of this sub-document. */
@@ -98,7 +113,11 @@ declare module 'mongoose' {
       $parent(): Document;
     }
 
-    class ArraySubdocument<IdType = any, TQueryHelpers = unknown, DocType = unknown> extends Subdocument<IdType, TQueryHelpers, DocType> {
+    class ArraySubdocument<
+      IdType = any,
+      TQueryHelpers = unknown,
+      DocType = unknown
+    > extends Subdocument<IdType, TQueryHelpers, DocType> {
       /** Returns this sub-documents parent array. */
       parentArray(): Types.DocumentArray<unknown>;
     }

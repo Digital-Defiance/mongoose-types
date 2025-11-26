@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [8.20.2] - 2024-11-25
+
+### Fixed
+- Added proper export of `Types` namespace from types.d.ts to fix "Cannot read properties of undefined (reading 'ObjectId')" error
+- Moved mongodb and bson imports outside of declare module block
+
 ## [8.20.1] - 2024-11-24
 
 ### Added

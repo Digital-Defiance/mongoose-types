@@ -1,6 +1,6 @@
 {
   "name": "@digitaldefiance/mongoose-types",
-  "version": "8.20.1",
+  "version": "8.20.2",
   "description": "Mongoose TypeScript definitions with support for custom ID types (string | ObjectId | any)",
   "main": "src/index.d.ts",
   "types": "src/index.d.ts",
