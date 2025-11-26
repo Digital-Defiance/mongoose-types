@@ -6,9 +6,6 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": false,
-    "moduleResolution": "node",
-    "paths": {
-      "mongoose": ["../src/index.d.ts"]
-    }
+    "moduleResolution": "node"
   }
 }

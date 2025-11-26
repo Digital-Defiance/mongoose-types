@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [8.20.4] - 2024-11-25
+
+### Fixed
+- Fixed TypeScript module resolution by correcting re-exports in index.d.ts to export from 'mongoose' instead of circular self-reference
+- Added comprehensive runtime re-exports in index.js to ensure all mongoose properties are available
+- Fixed Jest compatibility issues where mongoose getters weren't being evaluated properly
+- Added proper default export alongside named exports for better ES module compatibility
+
+### Added
+- Documentation in index.js explaining the re-export strategy for Jest compatibility
+
 ## [8.20.3] - 2024-11-25
 
 ### Fixed

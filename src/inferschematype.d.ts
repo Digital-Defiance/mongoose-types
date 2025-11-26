@@ -22,7 +22,7 @@ import {
   Types,
   UnionSchemaDefinition,
   UuidSchemaDefinition
-} from 'mongoose';
+} from '@digitaldefiance/mongoose-types';
 
 declare module 'mongoose' {
   /**
