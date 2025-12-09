@@ -1,10 +1,10 @@
 {
   "name": "@digitaldefiance/mongoose-types",
   "version": "8.20.6",
-  "homepage": "https://github.com/Digital-Defiance/mongoose-types",
+  "homepage": "https://github.com/Digital-Defiance/mongoose-types#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Digital-Defiance/mongoose-types.git"
+    "url": "https://github.com/Digital-Defiance/mongoose-types.git"
   },
   "description": "Mongoose TypeScript definitions with support for custom ID types (string | ObjectId | any)",
   "main": "src/index.js",
@@ -47,12 +47,7 @@
   ],
   "author": "Digital Defiance, Jessica Mulein",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Digital-Defiance/mongoose-types.git"
-  },
   "bugs": {
     "url": "https://github.com/Digital-Defiance/mongoose-types/issues"
-  },
-  "homepage": "https://github.com/Digital-Defiance/mongoose-types#readme"
+  }
 }
