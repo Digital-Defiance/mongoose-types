@@ -21,7 +21,8 @@
     "test:types": "tsc --noEmit --skipLibCheck test-types.ts",
     "test:tsd": "tsd",
     "test:runtime": "node test-runtime.js",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn test",
+    "publish:public": "npm publish --access public"
   },
   "dependencies": {
     "mongoose": "^8.20.0"
