@@ -100,3 +100,53 @@ MIT © Digital Defiance, Jessica Mulein
 ## Related Packages
 
 Part of the [Express Suite](https://github.com/Digital-Defiance/express-suite) ecosystem.
+
+## ChangeLog
+
+### Version 8.20.0
+
+- Initial release with custom Mongoose 8.x TypeScript definitions supporting flexible ID types
+- Added type tests and tsd-based test suite
+- Added LICENSE, README, and CHANGELOG
+
+### Version 8.20.2
+
+- Fixed duplicate `devDependencies` in package.json
+- Updated dev dependencies (`@types/node` ^24.10.1, `tsd` ^0.33.0, `typescript` ^5.9.3)
+- Added Nx `project.json` for workspace integration
+- Reformatted type definitions in `src/types.d.ts` for readability
+
+### Version 8.20.3
+
+- Added `src/index.js` runtime re-export of mongoose for runtime compatibility
+- Added `test-runtime.js` runtime test
+- Updated package `main` entry to `src/index.js`; included JS files and test files in published package
+- Added `test:runtime` script and integrated it into the test pipeline
+
+### Version 8.20.4
+
+- Major update to `src/index.d.ts`: reformatted and expanded type definitions with improved readability
+- Fixed TypeScript module resolution by correcting re-exports to export from `mongoose` instead of circular self-reference
+- Added comprehensive runtime re-exports in `index.js` for Jest compatibility
+- Fixed `inferschematype.d.ts` import to reference `@digitaldefiance/mongoose-types`
+- Removed test files from published package `files` list
+
+### Version 8.20.5
+
+- Simplified `src/index.js` to a single `module.exports = require('mongoose')` re-export
+- Moved `mongoose` from `devDependencies` to `dependencies`
+- Removed `src/index.ts` barrel file (no longer needed)
+
+### Version 8.20.7
+
+- Added `publish:public` npm script
+- Added `repository` and `homepage` fields to package.json
+- Removed `rootDir` from `tsconfig.lib.json`
+
+### Version 8.20.8
+
+- Version bump only
+
+### Version 8.20.9
+
+- Version bump only
